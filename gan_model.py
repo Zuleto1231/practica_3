@@ -1,81 +1,57 @@
-import torch
-from torchvision.utils import save_image
-import io
-import sys
 import os
+os.environ["KERAS_BACKEND"] = "jax"
 
-# Importar las clases del notebook
-# Nota: Primero debes convertir el notebook a .py o importar directamente
-try:
-    # Intentar importar desde un módulo Python si existe
-    from main import Generator, Discriminator
-except ImportError:
-    # Si no existe, usar nbimport o definir aquí las clases del notebook
-    # Por ahora, importamos torch.nn para usar las clases definidas en el notebook
-    import torch.nn as nn
-    
-    # Estas son las mismas clases del notebook main.ipynb
-    class Generator(nn.Module):
-        def __init__(self):
-            super().__init__()
-            self.model = nn.Sequential(
-                nn.ConvTranspose2d(100, 512, 4, 1, 0, bias=False),
-                nn.BatchNorm2d(512),
-                nn.ReLU(True),
+import numpy as np
+import keras
+from PIL import Image
 
-                nn.ConvTranspose2d(512, 256, 4, 2, 1, bias=False),
-                nn.BatchNorm2d(256),
-                nn.ReLU(True),
-
-                nn.ConvTranspose2d(256, 128, 4, 2, 1, bias=False),
-                nn.BatchNorm2d(128),
-                nn.ReLU(True),
-
-                nn.ConvTranspose2d(128, 64, 4, 2, 1, bias=False),
-                nn.BatchNorm2d(64),
-                nn.ReLU(True),
-
-                nn.ConvTranspose2d(64, 3, 4, 2, 1, bias=False),
-                nn.Tanh()
-            )
-
-        def forward(self, x):
-            return self.model(x)
 
 class GANImageGenerator:
-    """Wrapper para usar el generador del notebook"""
+    """Wrapper para usar el generador Keras"""
+
     def __init__(self, model_path, z_dim=100, device="cpu"):
-        self.device = device
         self.z_dim = z_dim
-        
-        # Usar la clase Generator del notebook
-        self.generator = Generator().to(device)
-        
-        # Cargar pesos si existe el modelo
+
+        # Cargar modelo Keras
         if model_path and os.path.exists(model_path):
-            self.generator.load_state_dict(torch.load(model_path, map_location=device))
+            self.generator = keras.models.load_model(model_path)
             print(f"✓ Modelo GAN cargado desde: {model_path}")
         else:
-            print(f"⚠️  Modelo no encontrado en {model_path}. Usando generador sin entrenar.")
-        
-        self.generator.eval()
+            print(
+                f"⚠️  Modelo no encontrado en {model_path}. Usando generador sin entrenar."
+            )
+            self.generator = None
 
     def generate_image(self, output_path=None, seed=None):
-        """Genera una imagen usando la GAN del notebook"""
+        """Genera una imagen usando la GAN Keras"""
+        if self.generator is None:
+            return "Error: No hay modelo cargado"
+
         if seed is not None:
-            torch.manual_seed(seed)
-        
-        with torch.no_grad():
-            noise = torch.randn(1, self.z_dim, 1, 1, device=self.device)
-            fake_image = self.generator(noise)
-            fake_image = (fake_image + 1) / 2  # Desnormalizar
-            
-            if output_path:
-                save_image(fake_image, output_path)
-                return output_path
-            else:
-                # Retornar como bytes
-                buffer = io.BytesIO()
-                save_image(fake_image, buffer, format='PNG')
-                buffer.seek(0)
-                return buffer.getvalue()
+            np.random.seed(seed)
+            keras.utils.set_random_seed(seed)
+
+        # Generar ruido latente
+        noise = np.random.normal(0, 1, (1, self.z_dim))
+
+        # Generar imagen
+        generated_image = self.generator.predict(noise, verbose=0)
+
+        # Desnormalizar de [-1, 1] a [0, 255]
+        generated_image = (generated_image[0] + 1) * 127.5
+        generated_image = np.clip(generated_image, 0, 255).astype(np.uint8)
+
+        # Convertir a PIL Image
+        img = Image.fromarray(generated_image)
+
+        if output_path:
+            img.save(output_path)
+            return output_path
+        else:
+            # Retornar como bytes
+            import io
+
+            buffer = io.BytesIO()
+            img.save(buffer, format="PNG")
+            buffer.seek(0)
+            return buffer.getvalue()

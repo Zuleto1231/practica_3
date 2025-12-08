@@ -74,6 +74,10 @@ Si no necesitas usar herramientas, responde directamente al usuario."""
 
             # Agregar consulta al historial
             self.history.append(HumanMessage(content=query))
+            
+            # Mantener solo los últimos 6 mensajes para evitar exceder límites
+            if len(self.history) > 6:
+                self.history = self.history[-6:]
 
             for iteration in range(max_iterations):
                 # Construir mensajes
@@ -95,8 +99,12 @@ Si no necesitas usar herramientas, responde directamente al usuario."""
                     if tool_match and params_match:
                         tool_name = tool_match.group(1)
                         try:
-                            params = json.loads(params_match.group(1))
-                        except:
+                            params_str = params_match.group(1)
+                            # Reemplazar barras invertidas por barras normales
+                            params_str = params_str.replace("\\", "/")
+                            params = json.loads(params_str)
+                        except Exception as e:
+                            print(f"   Error parseando params: {e}")
                             params = {}
 
                         if tool_name in self.tools:
@@ -104,8 +112,14 @@ Si no necesitas usar herramientas, responde directamente al usuario."""
                             print(f"   Parámetros: {params}\n")
 
                             # Ejecutar herramienta
-                            tool_result = self.tools[tool_name]._run(**params)
-                            print(f"✓ Resultado: {tool_result}\n")
+                            try:
+                                tool_result = self.tools[tool_name]._run(**params)
+                                print(f"✓ Resultado: {tool_result}\n")
+                            except TypeError as e:
+                                # Si falla con kwargs, intentar sin parámetros
+                                print(f"   Reintentando sin parámetros...\n")
+                                tool_result = self.tools[tool_name]._run()
+                                print(f"✓ Resultado: {tool_result}\n")
 
                             # Agregar resultado al historial
                             self.history.append(AIMessage(content=response_text))

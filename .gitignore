@@ -209,5 +209,3 @@ __marimo__/
 # Project specific
 gan_training/
 generated_images/
-*.pth
-*.pt
