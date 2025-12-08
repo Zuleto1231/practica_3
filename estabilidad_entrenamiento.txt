@@ -1,0 +1,200 @@
+Plot guardado en: gan_training/loss_epoch_001.png
+[01/100] D_loss=0.5123 | G_loss=6.7202 | 66.9s
+Plot guardado en: gan_training/loss_epoch_002.png
+[02/100] D_loss=0.4627 | G_loss=4.9700 | 83.1s
+Plot guardado en: gan_training/loss_epoch_003.png
+[03/100] D_loss=0.4277 | G_loss=5.2750 | 58.7s
+Plot guardado en: gan_training/loss_epoch_004.png
+[04/100] D_loss=0.3959 | G_loss=5.7206 | 58.2s
+Plot guardado en: gan_training/loss_epoch_005.png
+[05/100] D_loss=0.3996 | G_loss=5.5971 | 59.2s
+Plot guardado en: gan_training/loss_epoch_006.png
+[06/100] D_loss=0.3946 | G_loss=5.7684 | 58.6s
+Plot guardado en: gan_training/loss_epoch_007.png
+[07/100] D_loss=0.3914 | G_loss=5.7532 | 58.4s
+Plot guardado en: gan_training/loss_epoch_008.png
+[08/100] D_loss=0.3696 | G_loss=6.0589 | 82.7s
+Plot guardado en: gan_training/loss_epoch_009.png
+[09/100] D_loss=0.3951 | G_loss=5.8235 | 82.7s
+Plot guardado en: gan_training/loss_epoch_010.png
+[10/100] D_loss=0.3778 | G_loss=5.9437 | 58.8s
+Plot guardado en: gan_training/loss_epoch_011.png
+[11/100] D_loss=0.3645 | G_loss=6.2690 | 58.9s
+Plot guardado en: gan_training/loss_epoch_012.png
+[12/100] D_loss=0.3656 | G_loss=6.7536 | 58.5s
+Plot guardado en: gan_training/loss_epoch_013.png
+[13/100] D_loss=0.3585 | G_loss=6.3833 | 82.7s
+Plot guardado en: gan_training/loss_epoch_014.png
+[14/100] D_loss=0.3666 | G_loss=6.5652 | 58.5s
+Plot guardado en: gan_training/loss_epoch_015.png
+[15/100] D_loss=0.3703 | G_loss=6.4546 | 83.1s
+Plot guardado en: gan_training/loss_epoch_016.png
+[16/100] D_loss=0.3625 | G_loss=6.3285 | 58.6s
+Plot guardado en: gan_training/loss_epoch_017.png
+[17/100] D_loss=0.3514 | G_loss=7.0541 | 82.8s
+Plot guardado en: gan_training/loss_epoch_018.png
+[18/100] D_loss=0.3505 | G_loss=6.6786 | 83.2s
+Plot guardado en: gan_training/loss_epoch_019.png
+[19/100] D_loss=0.3645 | G_loss=6.4754 | 58.8s
+Plot guardado en: gan_training/loss_epoch_020.png
+[20/100] D_loss=0.3616 | G_loss=6.4931 | 58.9s
+Plot guardado en: gan_training/loss_epoch_021.png
+[21/100] D_loss=0.3630 | G_loss=6.3590 | 58.6s
+Plot guardado en: gan_training/loss_epoch_022.png
+[22/100] D_loss=0.3692 | G_loss=6.6497 | 82.8s
+Plot guardado en: gan_training/loss_epoch_023.png
+[23/100] D_loss=0.3502 | G_loss=6.3540 | 58.8s
+Plot guardado en: gan_training/loss_epoch_024.png
+[24/100] D_loss=0.3564 | G_loss=6.5127 | 58.6s
+Plot guardado en: gan_training/loss_epoch_025.png
+[25/100] D_loss=0.3356 | G_loss=7.4054 | 83.3s
+Plot guardado en: gan_training/loss_epoch_026.png
+[26/100] D_loss=0.3427 | G_loss=7.9162 | 59.2s
+Plot guardado en: gan_training/loss_epoch_027.png
+[27/100] D_loss=0.3558 | G_loss=6.3699 | 58.5s
+Plot guardado en: gan_training/loss_epoch_028.png
+[28/100] D_loss=0.3614 | G_loss=6.5925 | 58.7s
+Plot guardado en: gan_training/loss_epoch_029.png
+[29/100] D_loss=0.3624 | G_loss=5.9491 | 82.8s
+Plot guardado en: gan_training/loss_epoch_030.png
+[30/100] D_loss=0.3486 | G_loss=6.5362 | 59.2s
+Plot guardado en: gan_training/loss_epoch_031.png
+[31/100] D_loss=0.3538 | G_loss=6.7488 | 83.0s
+Plot guardado en: gan_training/loss_epoch_032.png
+[32/100] D_loss=0.3401 | G_loss=6.6807 | 58.5s
+Plot guardado en: gan_training/loss_epoch_033.png
+[33/100] D_loss=0.3702 | G_loss=6.1815 | 58.5s
+Plot guardado en: gan_training/loss_epoch_034.png
+[34/100] D_loss=0.3582 | G_loss=6.1808 | 82.8s
+Plot guardado en: gan_training/loss_epoch_035.png
+[35/100] D_loss=0.3632 | G_loss=6.1563 | 59.1s
+Plot guardado en: gan_training/loss_epoch_036.png
+[36/100] D_loss=0.3485 | G_loss=7.0186 | 58.9s
+Plot guardado en: gan_training/loss_epoch_037.png
+[37/100] D_loss=0.3542 | G_loss=6.5535 | 59.0s
+Plot guardado en: gan_training/loss_epoch_038.png
+[38/100] D_loss=0.3412 | G_loss=7.1652 | 82.8s
+Plot guardado en: gan_training/loss_epoch_039.png
+[39/100] D_loss=0.3898 | G_loss=6.0134 | 58.8s
+Plot guardado en: gan_training/loss_epoch_040.png
+[40/100] D_loss=0.3711 | G_loss=6.2298 | 58.8s
+Plot guardado en: gan_training/loss_epoch_041.png
+[41/100] D_loss=0.3627 | G_loss=6.7041 | 58.5s
+Plot guardado en: gan_training/loss_epoch_042.png
+[42/100] D_loss=0.3913 | G_loss=6.0313 | 58.7s
+Plot guardado en: gan_training/loss_epoch_043.png
+[43/100] D_loss=0.3750 | G_loss=6.0714 | 58.6s
+Plot guardado en: gan_training/loss_epoch_044.png
+[44/100] D_loss=0.3373 | G_loss=7.6957 | 58.7s
+Plot guardado en: gan_training/loss_epoch_045.png
+[45/100] D_loss=0.3480 | G_loss=7.6836 | 59.3s
+Plot guardado en: gan_training/loss_epoch_046.png
+[46/100] D_loss=0.3711 | G_loss=6.8487 | 82.7s
+Plot guardado en: gan_training/loss_epoch_047.png
+[47/100] D_loss=0.3318 | G_loss=7.4464 | 58.9s
+Plot guardado en: gan_training/loss_epoch_048.png
+[48/100] D_loss=0.3930 | G_loss=6.2083 | 59.3s
+Plot guardado en: gan_training/loss_epoch_049.png
+[49/100] D_loss=0.3405 | G_loss=7.5270 | 58.5s
+Plot guardado en: gan_training/loss_epoch_050.png
+[50/100] D_loss=0.3397 | G_loss=7.7846 | 83.1s
+Plot guardado en: gan_training/loss_epoch_051.png
+[51/100] D_loss=0.3323 | G_loss=7.8964 | 58.6s
+Plot guardado en: gan_training/loss_epoch_052.png
+[52/100] D_loss=0.3649 | G_loss=6.7365 | 58.6s
+Plot guardado en: gan_training/loss_epoch_053.png
+[53/100] D_loss=0.3461 | G_loss=7.8792 | 58.5s
+Plot guardado en: gan_training/loss_epoch_054.png
+[54/100] D_loss=0.3688 | G_loss=6.8392 | 58.6s
+Plot guardado en: gan_training/loss_epoch_055.png
+[55/100] D_loss=0.3313 | G_loss=8.2611 | 58.7s
+Plot guardado en: gan_training/loss_epoch_056.png
+[56/100] D_loss=0.3785 | G_loss=7.0382 | 58.5s
+Plot guardado en: gan_training/loss_epoch_057.png
+[57/100] D_loss=0.3810 | G_loss=6.4529 | 60.9s
+Plot guardado en: gan_training/loss_epoch_058.png
+[58/100] D_loss=0.3356 | G_loss=7.6551 | 58.7s
+Plot guardado en: gan_training/loss_epoch_059.png
+[59/100] D_loss=0.3707 | G_loss=7.1594 | 58.8s
+Plot guardado en: gan_training/loss_epoch_060.png
+[60/100] D_loss=0.3407 | G_loss=7.2361 | 58.9s
+Plot guardado en: gan_training/loss_epoch_061.png
+[61/100] D_loss=0.3863 | G_loss=6.7139 | 58.7s
+Plot guardado en: gan_training/loss_epoch_062.png
+[62/100] D_loss=0.3393 | G_loss=7.2950 | 58.3s
+Plot guardado en: gan_training/loss_epoch_063.png
+[63/100] D_loss=0.3788 | G_loss=6.4619 | 59.7s
+Plot guardado en: gan_training/loss_epoch_064.png
+[64/100] D_loss=0.3322 | G_loss=7.7798 | 58.5s
+Plot guardado en: gan_training/loss_epoch_065.png
+[65/100] D_loss=0.3618 | G_loss=7.2390 | 58.9s
+Plot guardado en: gan_training/loss_epoch_066.png
+[66/100] D_loss=0.3313 | G_loss=8.4134 | 58.7s
+Plot guardado en: gan_training/loss_epoch_067.png
+[67/100] D_loss=0.3994 | G_loss=5.9087 | 83.0s
+Plot guardado en: gan_training/loss_epoch_068.png
+[68/100] D_loss=0.3408 | G_loss=7.7125 | 58.7s
+Plot guardado en: gan_training/loss_epoch_069.png
+[69/100] D_loss=0.3557 | G_loss=7.7387 | 58.2s
+Plot guardado en: gan_training/loss_epoch_070.png
+[70/100] D_loss=0.3465 | G_loss=7.5623 | 58.8s
+Plot guardado en: gan_training/loss_epoch_071.png
+[71/100] D_loss=0.3729 | G_loss=6.7260 | 82.8s
+Plot guardado en: gan_training/loss_epoch_072.png
+[72/100] D_loss=0.3416 | G_loss=8.1048 | 58.9s
+Plot guardado en: gan_training/loss_epoch_073.png
+[73/100] D_loss=0.3741 | G_loss=6.6748 | 58.7s
+Plot guardado en: gan_training/loss_epoch_074.png
+[74/100] D_loss=0.3417 | G_loss=7.9987 | 58.6s
+Plot guardado en: gan_training/loss_epoch_075.png
+[75/100] D_loss=0.3987 | G_loss=5.9088 | 60.6s
+Plot guardado en: gan_training/loss_epoch_076.png
+[76/100] D_loss=0.3459 | G_loss=7.5692 | 82.8s
+Plot guardado en: gan_training/loss_epoch_077.png
+[77/100] D_loss=0.3645 | G_loss=6.9895 | 82.8s
+Plot guardado en: gan_training/loss_epoch_078.png
+[78/100] D_loss=0.3528 | G_loss=7.7343 | 58.3s
+Plot guardado en: gan_training/loss_epoch_079.png
+[79/100] D_loss=0.3564 | G_loss=7.3519 | 82.8s
+Plot guardado en: gan_training/loss_epoch_080.png
+[80/100] D_loss=0.3509 | G_loss=7.7161 | 83.1s
+Plot guardado en: gan_training/loss_epoch_081.png
+[81/100] D_loss=0.3408 | G_loss=8.4782 | 58.6s
+Plot guardado en: gan_training/loss_epoch_082.png
+[82/100] D_loss=0.3782 | G_loss=6.6901 | 59.6s
+Plot guardado en: gan_training/loss_epoch_083.png
+[83/100] D_loss=0.3563 | G_loss=7.6287 | 58.7s
+Plot guardado en: gan_training/loss_epoch_084.png
+[84/100] D_loss=0.3661 | G_loss=7.4713 | 82.7s
+Plot guardado en: gan_training/loss_epoch_085.png
+[85/100] D_loss=0.3540 | G_loss=6.8655 | 58.9s
+Plot guardado en: gan_training/loss_epoch_086.png
+[86/100] D_loss=0.3684 | G_loss=7.0091 | 58.8s
+Plot guardado en: gan_training/loss_epoch_087.png
+[87/100] D_loss=0.3421 | G_loss=8.1134 | 58.4s
+Plot guardado en: gan_training/loss_epoch_088.png
+[88/100] D_loss=0.3783 | G_loss=7.0838 | 58.3s
+Plot guardado en: gan_training/loss_epoch_089.png
+[89/100] D_loss=0.3397 | G_loss=7.9135 | 58.5s
+Plot guardado en: gan_training/loss_epoch_090.png
+[90/100] D_loss=0.3526 | G_loss=8.0570 | 83.0s
+Plot guardado en: gan_training/loss_epoch_091.png
+[91/100] D_loss=0.3873 | G_loss=6.3244 | 58.8s
+Plot guardado en: gan_training/loss_epoch_092.png
+[92/100] D_loss=0.3419 | G_loss=8.1321 | 82.7s
+Plot guardado en: gan_training/loss_epoch_093.png
+[93/100] D_loss=0.3566 | G_loss=7.5451 | 59.0s
+Plot guardado en: gan_training/loss_epoch_094.png
+[94/100] D_loss=0.3540 | G_loss=7.8813 | 58.2s
+Plot guardado en: gan_training/loss_epoch_095.png
+[95/100] D_loss=0.3537 | G_loss=7.6344 | 58.9s
+Plot guardado en: gan_training/loss_epoch_096.png
+[96/100] D_loss=0.3671 | G_loss=7.3273 | 58.5s
+Plot guardado en: gan_training/loss_epoch_097.png
+[97/100] D_loss=0.3394 | G_loss=8.6470 | 82.7s
+Plot guardado en: gan_training/loss_epoch_098.png
+[98/100] D_loss=0.3455 | G_loss=8.4327 | 58.6s
+Plot guardado en: gan_training/loss_epoch_099.png
+[99/100] D_loss=0.3610 | G_loss=7.7701 | 82.7s
+Plot guardado en: gan_training/loss_epoch_100.png
+[100/100] D_loss=0.3439 | G_loss=7.8159 | 58.7s
